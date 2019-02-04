@@ -1,0 +1,294 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "_normalize.scss";
+
+$left_indent: 250px;
+$color_header_text: #f9671e;
+
+body { 
+	width: 1400px;
+	margin:0 auto;
+	background-color: #fcfcfc;
+}
+
+.clearBoth {
+	clear: both;
+}
+
+.div_title {
+	color: white;
+	font-size: 90px;
+	font-weight: bold;
+}
+
+.div_ul {
+	color: white;
+	font-size: 18px;
+}
+
+.div_ring {
+	width: 60px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.div_text {
+	font-size: 18px;
+	width: 465px;
+	padding: 5px 0;
+}
+
+header {
+	height: 1260px;
+	//background-image: url('../img/bg_header.png');
+	#iphonesru {
+		
+		font-weight: bold;
+		font-size: 20px;
+		float: left;
+		background-image: url('../img/header_camera.png');
+		width: 464px;
+		height: 686px;
+		a {
+			color: $color_header_text;
+			text-decoration: none;
+			div {
+				margin-left: 250px;
+				margin-top: 40px;
+			}
+		}
+	}
+	#header_plug {
+		position: relative;
+		left: 542px;
+		top: 240px;
+	}
+	#header_text {
+		float: right;
+		top: 320px;
+		padding-left: 170px;
+		margin-top: -370px;
+		height: 320px;
+		width: 865px;
+		.header_name {
+			color: $color_header_text;
+			font-weight: bold;
+			font-size: 90px;
+		}
+		.header_description {
+			margin-top: 25px;
+			width: 600px;
+			font-size: 24px;
+			//font-weight: bold;
+		}
+	}
+	#header_buttons {
+		margin-left: 240px;
+		border-collapse: separate;
+		border-spacing: 10px 0px;
+	}
+	#header_eplaza {
+	//background-color: #f6f6f6;
+		margin-top: 50px;
+		margin-left: 250px;
+		height: 400px;
+		width: 900px;
+		//border: 1px solid blue;
+		#header_discount {
+			text-align: center;
+			font-size: 20px;
+			padding-top: 37px;
+			span {
+				font-size: 22px;
+				color: $color_header_text;
+			}
+		}
+		#header_steps {
+			margin-left: 50px;
+			margin-top: 15px;
+			border-collapse: separate;
+			border-spacing: 60px 0px;
+			td {
+				width: 275px;
+				vertical-align: top;
+				div {
+					padding-left: 90px;
+					padding-top: 10px;
+					a { 
+						color: $color_header_text;
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+#div1 {
+	height:700px;
+	background-color: #ffa100;
+	background-image: url('../img/bg_1.png');
+	.div_title {
+		padding-top: 110px;
+		padding-left: 250px;
+	}
+	.div_ul {
+		padding-top: 60px;
+		padding-left: 250px;
+
+	}
+}
+
+#div2 {
+	height:700px;
+	background-color: #36abdd;
+	background-image: url('../img/bg_2.png');
+	.div_title {
+		padding-top: 110px;
+		padding-left: 360px;
+	}
+	.div_ul {
+		padding-top: 175px;
+		padding-left: 605px;
+
+	}
+}
+
+#div3 {
+	height:700px;
+	background-color: #50d166;
+	background-image: url('../img/bg_3.png');
+	.div_title {
+		padding-top: 110px;
+		padding-left: 250px;
+	}
+	.div_ul {
+		padding-top: 150px;
+		padding-left: 250px;
+
+	}
+}
+
+#div4 {
+	height:700px;
+	background-color: #5856d6;
+	background-image: url('../img/bg_4.png');
+	.div_title {
+		padding-top: 80px;
+		padding-right: 200px;
+		text-align:right;
+	}
+	.div_ul {
+		padding-top: 110px;
+		padding-left: 605px;
+
+	}
+}
+
+#div5 {
+	height:1070px;
+	background-color: #ffffff;
+	background-image: url('../img/bg_5.png');
+	div {
+		padding-left: 250px;
+		padding-top: 110px;
+		color: black;
+		font-size: 90px;
+		font-weight: bold;
+	}
+}
+
+#div6 {
+	height:870px;
+	background-color: white;
+	//background-image: url('../img/bg_6.png');
+	#div6_title {
+		padding-left: 250px;
+		padding-top: 50px;
+		color: black;
+		font-size: 50px;
+		font-weight: bold;
+	}
+	table {
+		margin-left: 205px;
+		margin-top: 80px;
+		text-align:center;
+	}
+	.div6_img {
+		height: 220px;
+		width: 330px;
+	}
+	td {
+		width: 330px;
+		span {
+			color: #909090;
+		}
+	}
+}
+
+#div7 {
+	height:700px;
+	background-color: #e8ecf0;
+	background-image: url('../img/bg_7.png');
+	#div7_title {
+		padding-left: 720px;
+		padding-top: 110px;
+		color: black;
+		font-size: 90px;
+		font-weight: bold;
+	}
+	#div7_text {
+		margin-top: 60px;
+		width: 450px;
+		margin-left: 710px;
+		font-size: 13px;
+		#div7_op1 { opacity: 0.6;}
+		#div7_op2 { opacity: 0.3;}
+		#div7_op3 { opacity: 0.1;}
+	}
+	#div7_button {
+		float: right;
+		margin-right: 355px;
+		margin-top: 10px;
+	}
+}
+
+footer {
+	height:240px;
+	background-color: #f3f3f3;
+	//background-image: url('../img/bg_footer.png');
+	div {
+	margin-left: 170px;
+	padding-top: 65px;	
+		table {
+			text-align: left;
+			vertical-align: top;
+			border-collapse: separate;
+			border-spacing: 80px 0px;
+			td {
+				text-align: left;
+				vertical-align: top;
+				font-size: 12px;
+				a {
+					text-decoration:none;
+					color: black;
+				}
+				span {
+						font-weight:bold;
+						font-size: 16px;
+					}
+				p {
+					padding: 0;
+					margin: 7px 0;
+					
+				}
+				.footer_go {
+					padding-left: 50px;
+				}
+			}
+		}
+	}	
+}

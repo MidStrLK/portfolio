@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Тестовое задание. Ириком. Елагин Дмитрий.</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="css/screen.css" rel="stylesheet">
+	
+</head>
+
+<body>
+<!--Меню тестового задания-->
+<div id="absolyteMenu">
+		<ul>
+			<a href="../firsttask"><li>Макет задания</li></a>
+			<a href="../firstjob"><li>Сверстанное задание</li></a>
+			<a href="../secondtask"><li>Макет для мобильных устройств</li></a>
+			<a href="#"><li id="iamhere">Сверстанный макет</li></a>
+		</ul>
+	</div>
+
+<!-- шапка сайта-->
+	<div id="header">	
+		<div id="headerMain">
+			<img src="img/life_logo.png" id="logo">
+			<div id="headerMenu">
+			
+			<ul id="menu">
+				<li><a href="#"><img src="img/menu.png"></a>
+					<ul>
+						<a href="#"><li><img src="img/overview.png">Overview</li></a>
+						<a href="#"><li><img src="img/Profile.png">Profile</li></a>
+						<a href="#"><li><img src="img/Payout.png">Payout</li></a>
+						<a href="#"><li><img src="img/Settings.png">Settings</li></a>
+					</ul>
+				</li>  
+			</ul>
+			<div id="headerLogOut"><a href="#">Log Out</a></div>
+			</div><!--end headerMenu-->
+		</div><!--end headerMain-->
+	</div><!--end header-->
+	
+<!--основная часть страницы-->		
+	<div id="middle">
+		<div id="middleAccount">
+			<div id="middleAccountDetails">
+				<div class="middleText">Account details</div>
+				<img src="img/photo.png">
+				<div class="clearBoth"></div>
+				<table>
+					<tr><td class="tableRight">First Name: </td><td class="tableLeft">Anna</td></tr>
+					<tr><td class="tableRight">Last Name: </td><td class="tableLeft">Alehina</td></tr>
+					<tr><td class="tableRight">Location: </td><td class="tableLeft">Russian Federation</td></tr>
+				</table>
+				<div class="clearBoth"></div>
+			</div><!--end middleAccountDetails-->
+			<div id="middleAccountEmail">
+				<div><span>E-mail address:</span> tushkan00@gmail.com</div>
+				<button> Change e-mail </button>
+			</div><!--end middleAccountEmail-->
+			<div class="clearBoth"></div>
+		</div><!--end middleAccount-->
+		<div id="middleChannels">
+				<div class="middleText">Channels list</div>
+				<button class="btn"> Add a new channel </button>
+				<div class="clearBoth"></div>
+				<table>
+					<tr>
+						<th>Name/link<img src="img/tableSortDown.png"></th>
+						<th>Date added<img src="img/tableSortDown.png"></th>
+						<th>%<img src="img/tableSortDown.png"></th>
+						<th>Status<img src="img/tableSortDown.png"></th>
+						<th>Contact</th>
+					</tr>
+					<tr>
+						<td class="tableName"><a href="#">KBH</a></td>
+						<td class="tableDate">12.02.2006</td>
+						<td class="tableDate">80%</td>
+						<td class="tableStatus"><img src="img/checked.png"></td>
+						<td class="tableContact"><a href="#">PDF<img src="img/contractArrow.png"></a></td>
+					</tr>
+					<tr class="tableBand">
+						<td class="tableName"><a href="#">PelmeniTV</a></td>
+						<td class="tableDate">12.02.2006</td>
+						<td class="tablePercent">80%</td>
+						<td class="tableStatus"><img src="img/checked.png"></td>
+						<td class="tableContact"><a href="#">PDF<img src="img/contractArrow.png"></a></td>
+					</tr>
+					<tr>
+						<td class="tableName"><a href="#">AFGHGK</a></td>
+						<td class="tableDate">12.02.2006</td>
+						<td class="tablePercent">80%</td>
+						<td class="tableStatus"><img src="img/unchecked.png"></td>
+						<td class="tableContact"><a href="#">PDF<img src="img/contractArrow.png"></a></td>
+					</tr>
+					<tr class="tableBand">
+						<td class="tableName"><a href="#">FGFHGJ</a></td>
+						<td class="tableDate">12.02.2006</td>
+						<td class="tablePercent">80%</td>
+						<td class="tableStatus"><img src="img/unchecked.png"></td>
+						<td class="tableContact"><a href="#">PDF<img src="img/contractArrow.png"></a></td>
+					</tr>						
+				</table>
+				<div id="dots">...</div>
+				<div class="clearBoth"></div>
+				<div id="total"> Total: 5 channels <br><button>See more</button> </div>
+		</div><!--end middleChannels-->
+		<div id="middlePayment">
+			<div class="middleText">Payment details</div>
+				<div id="middlePaymentCheckbox">
+					<label><input class="middleCheckbox" type="checkbox" name="checkPaypal" checked="checked"/><span></span>PayPal</label>
+					<label><input class="middleCheckbox" type="checkbox" name="checkBankAccount" /><span></span>Bank Account</label>
+					<label><input class="middleCheckbox" type="checkbox" name="checkWebMoney" /><span></span>Web Money</label>
+					<div id="middlePaymentNote">*Selected method is used by default</div>
+					<div class="clearBoth"></div>
+					<span id="middlePaymentChoice"> PAYPAL </span><br>
+					PayPal e-mail: <input type="text" size="25" value="abc@mail.ru">
+				</div>
+				<div id="middleSave">
+						<button id="middleSaveButton">Save changes</button>
+						<button id="middleCancelButton" disabled="disabled">Cancel</button> 
+				</div>
+				<div class="clearBoth"></div>
+		</div><!--end middlePayment-->
+	</div><!--end middle-->
+	
+<!--подвал сайта-->	
+	<div id="footer">
+		<div id="footerStay">Stay Connected</div>
+		<div id="footerIcons">
+			<img src="img/youtube.png">
+			<img src="img/FSM.png" id="FSM">
+		</div>
+		<div id="copyright">© 2013 All rights reserved</div>
+	</div><!--end footer-->
+</body>
+</html>

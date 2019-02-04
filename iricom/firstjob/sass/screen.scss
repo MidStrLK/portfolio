@@ -1,0 +1,302 @@
+@import "_normalize.scss";
+
+$headerMenuColor: #a7b1bb;
+$highlighMenuColor: #00436b;
+$mainColor: #005587;
+$borderColor: #dcdcdc;
+
+/* Часто встречающиеся стили*/
+body {
+	width: 1024px;
+	margin:0 auto;
+	background-color: #fcfcfc;
+	border: 1px solid $borderColor;
+}
+
+.clearBoth {
+	clear: both;
+}
+
+.middleText {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+
+/* шапка сайта*/
+#headerMain {
+	position: relative;
+	background-image: url("../img/header_stripe.png");
+	background-repeat: no-repeat;
+	margin-top: 22px;
+	height: 37px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid $borderColor;
+	#logo {
+		position: absolute;
+		top: -9px;
+		left: 109px;
+	}
+	/*Меню сайта в шапке*/
+	#headerMenu {
+		height: 100%;
+		position: relative;
+		left: 437px;
+		table {
+			height: 100%;
+			tr {
+				height: 100%;
+				td:nth-child(2) {background-color: $highlighMenuColor;}
+				td {
+					&:hover {background-color: $highlighMenuColor;}
+					height: 37px;
+					padding-left: 13px;
+					padding-right: 13px;
+					vertical-align: middle;
+					a {
+						color: $headerMenuColor;
+						text-decoration: none;
+						img {
+							position:relative;
+							top: 2px;
+							padding-right: 5px;
+						}
+					}
+				}
+				#headerLogOut {	
+					a{
+					padding: 5px;
+					border: $headerMenuColor 1px solid;
+					border-radius: 12px;
+					
+					}
+				}
+			}
+		}
+	}
+}
+
+/*средняя часть сайта*/
+#middle {
+	margin:0 auto;
+	width: 800px;
+	margin-bottom: 50px;
+	/* часть Account Details*/
+	#middleAccount {
+		border: 1px solid $borderColor;
+		#middleAccountDetails{ 
+			padding: 20px 0 0 26px;
+			img {
+				float: left;
+				margin-bottom: 15px;
+			}
+			table {
+				margin-left: 180px;
+				tr {
+					td {
+						padding: 5px;
+					}
+					.tableRight { 
+						text-align: right;
+						color: $headerMenuColor;
+					}
+					.tableLeft { text-align: left;}
+				}
+			}
+		}
+		#middleAccountEmail {
+			width: 780px;
+			height: 40px;
+			padding-top: 8px;
+			border-top: 1px solid $borderColor;
+			div {
+				position: relative;
+				left: 183px;
+				float: left;
+				span { 
+					color: $headerMenuColor; 
+					margin-right: 6px;
+				}
+			}
+			button {
+				float: right;
+				width: 130px;
+				height: 30px;
+				border-radius: 4px;
+				border-color: $mainColor;
+				color: white;
+				background-color: $mainColor;
+			}
+		}
+	}
+	/* часть Channels List*/
+	#middleChannels{
+		margin-top: 30px;
+		padding: 26px;
+		border: 1px solid $borderColor;
+		.middleText {float:left;}
+		.btn {
+			float:right;
+			height: 30px;
+			border-radius: 4px;
+			border-color: $mainColor;
+			color: white;
+			background-color: $mainColor;
+			position:relative;
+			right: -7px;
+		}
+		table {
+			width: 752px;
+			text-align: center;
+			font-size: 12px;
+			//smargin-bottom: 30px;
+			a{color: black;}
+			tr {
+				height: 28px;
+			}
+			.tableBand { background-color: #f2f2f2;}
+			th {
+				color: $headerMenuColor; 
+				text-align: left;
+				padding-left: 20px;
+				img {
+					margin-left: 4px;
+				}
+			}
+			.tableContact { 
+				width: 120px;
+				img {
+					margin-left: 4px;
+				}
+			}
+			.tableStatus { width: 80px; }
+			.tablePercent { width: 30px; }
+			.tableDate { width: 100px; }
+			.tableName { text-align: left; padding-left: 20px;}
+
+		}
+		#dots {
+			font-size: 22px;
+			font-weight: bold;
+			color: $headerMenuColor;
+			text-align: center;
+			margin-bottom: 5px;
+		}
+		#total {
+			border-top: 1px solid $borderColor;
+			padding-top: 15px;
+			margin-left: -26px;
+			padding-left: 26px;
+			color: #6cc9cb;
+			font-weight: bold;
+			button {
+				float: right;
+				position: relative;
+				right: 325px;
+				width: 100px;
+				height: 30px;
+				border-radius: 4px;
+				border-color: $mainColor;
+				color: white;
+				font-weight: normal;
+				background-color: $mainColor;
+			}
+		}
+	}
+	/* часть Payment Details*/
+	#middlePayment {
+		margin-top: 30px;
+		padding: 26px;
+		border: 1px solid $borderColor;
+		label {
+				height: 19px;
+				display: block;
+				position: relative;
+				float: left;
+				margin-right:50px;
+				font-size:16px;
+				input { margin-right: 12px;}
+			}
+		input[type="checkbox"] + span {
+				 position: absolute;
+				 left: -2px; top: 0px;
+				 width: 100%; height: 100%;
+				 background: url("../img/check.png") no-repeat;
+				 cursor: pointer;
+				 margin-right: -20px;
+		}
+		input[type="checkbox"]:checked + span  	{
+			background-position: 0 -19px;
+		}
+		#middlePaymentNote {
+			color: $headerMenuColor;
+			float: right;
+			border-left: 1px solid $borderColor;
+			height: 50px;
+			padding: 20px 0 0 15px;
+			margin-top: -20px;
+		}
+		#middlePaymentChoice {
+			font-size:22px;
+			font-weight:bold;
+			color: $headerMenuColor;
+		}
+		#middlePaymentCheckbox { 
+			margin-bottom : 26px;
+			font-size: 14px;
+		}
+		#middleSave {
+			border-top: 1px solid $borderColor;
+			margin-left: -26px;
+			padding-left: 26px;
+			padding-top: 15px;
+			button {
+				position: relative;
+				left: 300px;
+				height: 30px;
+				border-radius: 4px;
+				border-color: $mainColor;
+				color: white;
+				background-color: $mainColor;
+				margin-right: 15px;
+			}
+			#middleCancelButton {
+				background-color: #cbcbcb; 
+				border-color: #cbcbcb; 
+			}
+		}
+	}
+}
+
+/*Подвал сайта*/
+#footer {
+	height: 140px;
+	background-color: $mainColor;
+	padding-left: 110px;
+	padding-right: 110px;
+	#footerStay {
+		position: relative;
+		width: 800px;
+		border-bottom:1px solid $borderColor;
+		font-size:21px;
+		color: $headerMenuColor;
+		padding-top: 30px;
+		padding-bottom: 3px;
+		margin-bottom: 5px;
+
+	}
+	#FSM {
+		position: relative;
+		top:-14px;
+	}
+	#copyright {
+		float: right;
+		color: $headerMenuColor;
+		position: relative;
+		top: -40px;
+		font-size: 12px;
+	}
+	
+}
+
+

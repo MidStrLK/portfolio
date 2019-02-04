@@ -1,0 +1,842 @@
+@charset "IBM866";
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, ../sass/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, ../sass/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 43, ../sass/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 55, ../sass/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 65, ../sass/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 76, ../sass/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 87, ../sass/_normalize.scss */
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 96, ../sass/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 107, ../sass/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 116, ../sass/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 124, ../sass/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 133, ../sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 142, ../sass/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 151, ../sass/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 160, ../sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 167, ../sass/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 171, ../sass/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 182, ../sass/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 190, ../sass/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 201, ../sass/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 209, ../sass/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 219, ../sass/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 230, ../sass/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 254, ../sass/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 264, ../sass/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 276, ../sass/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 291, ../sass/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 301, ../sass/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 310, ../sass/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 320, ../sass/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 333, ../sass/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 345, ../sass/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 355, ../sass/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 369, ../sass/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 377, ../sass/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 388, ../sass/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 397, ../sass/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 406, ../sass/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 417, ../sass/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 423, ../sass/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* Часто встречающиеся стили*/
+/* line 9, ../sass/screen.scss */
+body {
+  width: 400px;
+  margin: 0 auto;
+  background-color: #fcfcfc;
+  border: 1px solid gainsboro;
+}
+
+/* line 16, ../sass/screen.scss */
+.clearBoth {
+  clear: both;
+}
+
+/* line 20, ../sass/screen.scss */
+.middleText {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* шапка сайта*/
+/* line 27, ../sass/screen.scss */
+#headerMain {
+  position: relative;
+  background-image: url("../img/header_stripe.png");
+  background-repeat: no-repeat;
+  margin-top: 22px;
+  height: 37px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid gainsboro;
+  /*Меню сайта в шапке*/
+}
+/* line 35, ../sass/screen.scss */
+#headerMain #logo {
+  position: absolute;
+  top: -9px;
+  left: 109px;
+}
+/* line 41, ../sass/screen.scss */
+#headerMain #headerMenu {
+  height: 100%;
+  position: relative;
+  /*Задаём параметры блока, содержащего основное меню*/
+}
+/* line 46, ../sass/screen.scss */
+#headerMain #headerMenu #menu {
+  display: block;
+  position: absolute;
+  top: -16px;
+  left: -40px;
+}
+/* line 51, ../sass/screen.scss */
+#headerMain #headerMenu #menu > li {
+  display: inline-block;
+  position: relative;
+}
+/* line 54, ../sass/screen.scss */
+#headerMain #headerMenu #menu > li > ul {
+  position: absolute;
+  top: 37px;
+  display: none;
+  background-color: #00436b;
+  color: white;
+  list-style-type: none;
+  width: 270px;
+}
+/* line 62, ../sass/screen.scss */
+#headerMain #headerMenu #menu > li > ul > a {
+  height: 40px;
+  text-decoration: none;
+  color: #a7b1bb;
+}
+/* line 66, ../sass/screen.scss */
+#headerMain #headerMenu #menu > li > ul > a > li {
+  margin-left: -40px;
+  height: 40px;
+  text-align: left;
+  padding-top: 10px;
+  text-decoration: none;
+  color: white;
+}
+/* line 73, ../sass/screen.scss */
+#headerMain #headerMenu #menu > li > ul > a > li > img {
+  margin-left: 17px;
+  margin-right: 10px;
+}
+/* line 77, ../sass/screen.scss */
+#headerMain #headerMenu #menu > li > ul > a > li:hover {
+  background-color: #005587;
+}
+/* line 84, ../sass/screen.scss */
+#headerMain #headerMenu #menu > li:hover > ul {
+  display: block;
+}
+/* line 94, ../sass/screen.scss */
+#headerMain #headerMenu #headerLogOut {
+  float: right;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+/* line 99, ../sass/screen.scss */
+#headerMain #headerMenu #headerLogOut a {
+  padding: 5px;
+  border: #a7b1bb 1px solid;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #a7b1bb;
+}
+
+/*средняя часть сайта*/
+/* line 112, ../sass/screen.scss */
+#middle {
+  margin: 0 auto;
+  width: 340px;
+  margin-bottom: 50px;
+  /* часть Account Details*/
+  /* часть Channels List*/
+  /* часть Payment Details*/
+}
+/* line 117, ../sass/screen.scss */
+#middle #middleAccount {
+  border: 1px solid gainsboro;
+}
+/* line 119, ../sass/screen.scss */
+#middle #middleAccount #middleAccountDetails {
+  padding: 20px 0 0 26px;
+}
+/* line 121, ../sass/screen.scss */
+#middle #middleAccount #middleAccountDetails img {
+  margin-bottom: 15px;
+}
+/* line 124, ../sass/screen.scss */
+#middle #middleAccount #middleAccountDetails table {
+  margin-left: -5px;
+}
+/* line 127, ../sass/screen.scss */
+#middle #middleAccount #middleAccountDetails table tr td {
+  padding: 5px;
+}
+/* line 130, ../sass/screen.scss */
+#middle #middleAccount #middleAccountDetails table tr .tableRight {
+  text-align: right;
+  color: #a7b1bb;
+}
+/* line 134, ../sass/screen.scss */
+#middle #middleAccount #middleAccountDetails table tr .tableLeft {
+  text-align: left;
+}
+/* line 138, ../sass/screen.scss */
+#middle #middleAccount #middleAccountEmail {
+  width: 340px;
+  padding-top: 8px;
+  border-top: 1px solid gainsboro;
+}
+/* line 142, ../sass/screen.scss */
+#middle #middleAccount #middleAccountEmail div {
+  position: relative;
+  left: 25px;
+  margin-bottom: 10px;
+}
+/* line 146, ../sass/screen.scss */
+#middle #middleAccount #middleAccountEmail div span {
+  color: #a7b1bb;
+  margin-right: 6px;
+}
+/* line 151, ../sass/screen.scss */
+#middle #middleAccount #middleAccountEmail button {
+  margin-left: 26px;
+  margin-bottom: 10px;
+  width: 130px;
+  height: 30px;
+  border-radius: 4px;
+  border-color: #005587;
+  color: white;
+  background-color: #005587;
+}
+/* line 164, ../sass/screen.scss */
+#middle #middleChannels {
+  margin-top: 30px;
+  padding: 26px;
+  border: 1px solid gainsboro;
+}
+/* line 168, ../sass/screen.scss */
+#middle #middleChannels .middleText {
+  float: left;
+}
+/* line 169, ../sass/screen.scss */
+#middle #middleChannels .btn {
+  height: 30px;
+  border-radius: 4px;
+  border-color: #005587;
+  color: white;
+  background-color: #005587;
+}
+/* line 176, ../sass/screen.scss */
+#middle #middleChannels table {
+  width: 314px;
+  text-align: center;
+  font-size: 12px;
+}
+/* line 181, ../sass/screen.scss */
+#middle #middleChannels table a {
+  color: black;
+}
+/* line 182, ../sass/screen.scss */
+#middle #middleChannels table tr {
+  height: 28px;
+  margin-left: -26px;
+}
+/* line 186, ../sass/screen.scss */
+#middle #middleChannels table .tableBand {
+  background-color: #f2f2f2;
+}
+/* line 187, ../sass/screen.scss */
+#middle #middleChannels table th {
+  font-size: 8px;
+  color: #a7b1bb;
+  text-align: left;
+}
+/* line 191, ../sass/screen.scss */
+#middle #middleChannels table th img {
+  margin-left: 4px;
+}
+/* line 196, ../sass/screen.scss */
+#middle #middleChannels table .tableContact img {
+  margin-left: 4px;
+}
+/* line 200, ../sass/screen.scss */
+#middle #middleChannels table .tableName {
+  text-align: left;
+}
+/* line 205, ../sass/screen.scss */
+#middle #middleChannels #dots {
+  font-size: 22px;
+  font-weight: bold;
+  color: #a7b1bb;
+  text-align: center;
+  margin-bottom: 5px;
+}
+/* line 212, ../sass/screen.scss */
+#middle #middleChannels #total {
+  border-top: 1px solid gainsboro;
+  padding-top: 15px;
+  margin-left: -26px;
+  padding-left: 26px;
+  color: #6cc9cb;
+  font-weight: bold;
+}
+/* line 219, ../sass/screen.scss */
+#middle #middleChannels #total button {
+  margin-top: 17px;
+  position: relative;
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+  border-color: #005587;
+  color: white;
+  font-weight: normal;
+  background-color: #005587;
+}
+/* line 234, ../sass/screen.scss */
+#middle #middlePayment {
+  margin-top: 30px;
+  padding: 26px;
+  border: 1px solid gainsboro;
+}
+/* line 238, ../sass/screen.scss */
+#middle #middlePayment label {
+  height: 19px;
+  display: block;
+  position: relative;
+  float: left;
+  margin-right: 50px;
+  font-size: 16px;
+}
+/* line 245, ../sass/screen.scss */
+#middle #middlePayment label input {
+  margin-right: 12px;
+}
+/* line 247, ../sass/screen.scss */
+#middle #middlePayment input[type="checkbox"] + span {
+  position: absolute;
+  left: -2px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: url("../img/check.png") no-repeat;
+  cursor: pointer;
+  margin-right: -20px;
+}
+/* line 255, ../sass/screen.scss */
+#middle #middlePayment input[type="checkbox"]:checked + span {
+  background-position: 0 -19px;
+}
+/* line 258, ../sass/screen.scss */
+#middle #middlePayment #middlePaymentNote {
+  font-size: 8px;
+  color: #a7b1bb;
+  float: right;
+  border-left: 1px solid gainsboro;
+  height: 50px;
+  padding: 20px 0 0 15px;
+  margin-top: -50px;
+}
+/* line 267, ../sass/screen.scss */
+#middle #middlePayment #middlePaymentChoice {
+  margin-top: 5px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #a7b1bb;
+}
+/* line 273, ../sass/screen.scss */
+#middle #middlePayment #middlePaymentCheckbox {
+  margin-bottom: 26px;
+  font-size: 14px;
+}
+/* line 277, ../sass/screen.scss */
+#middle #middlePayment #middleSave {
+  border-top: 1px solid gainsboro;
+  margin-left: -26px;
+  padding-left: 26px;
+  padding-top: 15px;
+}
+/* line 282, ../sass/screen.scss */
+#middle #middlePayment #middleSave button {
+  position: relative;
+  height: 30px;
+  border-radius: 4px;
+  border-color: #005587;
+  color: white;
+  background-color: #005587;
+  margin-right: 15px;
+}
+/* line 291, ../sass/screen.scss */
+#middle #middlePayment #middleSave #middleCancelButton {
+  background-color: #cbcbcb;
+  border-color: #cbcbcb;
+}
+
+/*Подвал сайта*/
+/* line 300, ../sass/screen.scss */
+#footer {
+  height: 140px;
+  background-color: #005587;
+  padding-left: 26px;
+  padding-right: 30px;
+}
+/* line 305, ../sass/screen.scss */
+#footer #footerStay {
+  position: relative;
+  width: 340px;
+  border-bottom: 1px solid gainsboro;
+  font-size: 21px;
+  color: #a7b1bb;
+  padding-top: 30px;
+  padding-bottom: 3px;
+  margin-bottom: 5px;
+}
+/* line 316, ../sass/screen.scss */
+#footer #FSM {
+  position: relative;
+  top: -14px;
+}
+/* line 320, ../sass/screen.scss */
+#footer #copyright {
+  float: right;
+  color: #a7b1bb;
+  position: relative;
+  top: -40px;
+  font-size: 12px;
+}
+
+
+
+#absolyteMenu {
+	position: fixed;
+	top: -16px;
+	left: -40px;
+	text-decoration: none;
+}
+
+#absolyteMenu ul{
+	list-style-type:none;
+	text-decoration: none;
+}
+#absolyteMenu ul a {
+	text-decoration: none;
+	background-color: red;
+}
+
+#absolyteMenu ul a li{
+	height: 40px;
+	width: 200px;
+	color: white;
+	background-color: #00436b;
+	padding: 5px;
+	text-decoration: none;
+}
+
+#absolyteMenu ul a li:hover{
+	background-color: #005587;
+}
+
+#absolyteMenu ul a #iamhere{ background-color: #005587;}

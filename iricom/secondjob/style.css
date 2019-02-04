@@ -1,0 +1,21 @@
+#absolyteMenu {
+	position: fixed;
+	top: 0px;
+	дуаеЖ 0зчж
+}
+
+#absolyteMenu > ul{
+	list-style-type:none;
+}
+
+#absolyteMenu > ul > a > li{
+	height: 40px;
+	width: 200px;
+	color: white;
+	background-color: #00436b;
+	padding: 5px;
+}
+
+#absolyteMenu > ul > a > li:hover{
+	background-color: #005587;
+}

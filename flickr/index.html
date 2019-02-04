@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<!-- Сделал Дмитрий Елагин  -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Поиск по Flickr</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container" id="main"></div>
+
+<script type="text/template" id="viewBase">
+	<div class="search">
+		<span >Я ищу</span>
+		<input id="box" type="text" size="20" placeholder="интересные картинки">
+		<button class="Button">на Flickr!!!</button>
+    </div>
+	<div class="imgList"></div>
+</script>
+
+<script type="text/template" id="viewImg">
+	<a href="<%= link %>" target="_blank">
+	<img class="sourceimg" src="<%= photo %>" alt="<%= title %>" />
+	<span class="sourcespan"> <%= title %> </span></a>
+</script>
+
+</body>
+
+<script src="jquery.js"></script>
+<script src="underscore.js"></script>
+<script src="backbone.js"></script>
+<script src="main.js"></script>
+</html>
