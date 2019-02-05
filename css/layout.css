@@ -965,6 +965,7 @@ footer .social-links {
    margin: 18px 0 30px 0;
    padding: 0;
    font-size: 30px;
+    color: red;
 }
 footer .social-links li {
     display: inline-block;

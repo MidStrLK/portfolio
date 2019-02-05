@@ -102,7 +102,7 @@
 /*	Modal Popup
 ------------------------------------------------------*/
 
-    $('.item-wrap a').magnificPopup({
+    /*$('.item-wrap a').magnificPopup({
 
        type:'inline',
        fixedContentPos: false,
@@ -115,7 +115,7 @@
     $(document).on('click', '.popup-modal-dismiss', function (e) {
     		e.preventDefault();
     		$.magnificPopup.close();
-    });
+    });*/
 
 
 /*----------------------------------------------------*/
